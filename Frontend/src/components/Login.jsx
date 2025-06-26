@@ -1,10 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
 import axios from "axios";
 import { toast } from "sonner";
 import { Link, useNavigate } from "react-router-dom";
-import { Loader2 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { setAuthUser } from "@/redux/authSlice";
 import "../Styles/Login.css";
@@ -29,7 +26,7 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/login",
+        "https://snaplink-lxa1.onrender.com/api/v1/user/login",
         input,
         {
           headers: {
