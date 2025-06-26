@@ -10,7 +10,7 @@ const useGetUserProfile = (userId) => {
     const fetchUserProfile = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/user/profile/${userId}`,
+          `https://snaplink-lxa1.onrender.com/api/v1/user/profile/${userId}`,
           { withCredentials: true }
         );
         if (res.data.success) {
