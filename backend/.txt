@@ -1,0 +1,81 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.6.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "datauri": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
+    "nodemon": "^3.1.10"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "nodemon backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+ // "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    // "start":"nodemon Backend/index.js"
+
+
+
+
+
+
+
+
+/frontend
+├── /public
+│   └── index.html
+├── /src
+│   ├── /assets
+│   ├── /components
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── PostCard.jsx
+│   │   ├── CommentBox.jsx
+│   │   ├── UserListItem.jsx
+│   │   └── MessageBubble.jsx
+│   ├── /features
+│   │   ├── authSlice.js
+│   │   ├── postSlice.js
+│   │   ├── userSlice.js
+│   │   └── messageSlice.js
+│   ├── /pages
+│   │   ├── Auth
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   ├── Home.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Suggestions.jsx
+│   │   ├── Chat.jsx
+│   │   └── EditProfile.jsx
+│   ├── /routes
+│   │   └── ProtectedRoute.jsx
+│   ├── /utils
+│   │   ├── api.js
+│   │   └── theme.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+└── package.json

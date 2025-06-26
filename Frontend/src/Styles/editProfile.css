@@ -1,0 +1,95 @@
+/* src/css/editProfile.css */
+
+.edit-profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.edit-form-container {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.edit-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #111827;
+}
+
+.edit-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-lg {
+  width: 80px;
+  height: 80px;
+}
+
+.edit-user-info h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.edit-user-info span {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.change-photo-btn {
+  background-color: #4f46e5;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.edit-input-section {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-input-section label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.edit-textarea {
+  min-height: 80px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+}
+
+.edit-select-trigger {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background-color: #4f46e5;
+  color: white;
+}

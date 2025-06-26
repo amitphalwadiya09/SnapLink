@@ -1,0 +1,114 @@
+/* src/css/post.css */
+
+.post-card {
+  width: 100%;
+  max-width: 600px;
+  
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar-sm {
+  width: 40px;
+  height: 40px;
+}
+
+.author-info h1 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem 0 1rem;
+}
+
+.left-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.post-actions svg {
+  cursor: pointer;
+}
+
+.liked {
+  color: #e11d48;
+}
+
+.likes-count {
+  font-weight: 500;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.caption {
+  padding: 0.3rem 1rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.caption-author {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.view-comments {
+  font-size: 0.85rem;
+  padding: 0 1rem 0.5rem;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.add-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.add-comment input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.add-comment span {
+  font-weight: 500;
+  color: #2563eb;
+  cursor: pointer;
+  margin-left: 0.75rem;
+}

@@ -1,0 +1,108 @@
+/* chat.css */
+
+.chat-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  background: linear-gradient(#fbfbfc,#2033c3);
+  color: rgb(4, 15, 87);
+}
+
+/* Left Sidebar */
+.user-list-section {
+  width: 20%;
+
+  padding: 1rem;
+  border-right: 1px solid #333;
+ background: linear-gradient(#fbfbfc,#2033c3);
+}
+
+.user-list-header {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.user-list-scroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  padding-right: 4px;
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-list-item:hover {
+  background-color: #fbfafa;
+}
+
+/* Right Chat Section */
+.chat-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background: linear-gradient(#fbfbfc,#b7c0ba)
+}
+.message-input{
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgb(141, 144, 224);
+  color: #0b1345;
+  font-size: 1rem;
+}
+
+.chat-placeholder {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+background: linear-gradient(#fbfbfc,#08104c);
+  color:rgb(7, 43, 115);
+}
+
+/* Chat Input */
+.chat-input-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  justify-content: center;
+  border-top: 1px solid #aedbfe;
+}
+.messageSendButton{
+  width: 10%;
+  /* position: fixed; */
+  padding: 0.75rem;
+  /* margin-top: 1rem; */
+  background: #040b3b;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+input {
+  padding: 0.6rem 1rem;
+  margin-right: 5px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #040b3b;
+  font-size: 1rem;
+}

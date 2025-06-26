@@ -1,0 +1,173 @@
+/* Container for the whole messages section */
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: #6ac9f2;
+  color: white;
+  width: 100%;
+  justify-items: center;
+  border: 1px solid #3f4cb2;
+  border-radius: 20px;
+
+}
+
+/* Header bar with user info and back/view buttons */
+.messages-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #c6e0f1;
+  border-bottom: 1px solid #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-top: 1px solid #3f4cb2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* User avatar and username in the header */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #040b3b;
+  font-size: medium;
+}
+
+/* Back button on small screens */
+.back-btn {
+  margin-right: 10px;
+}
+
+/* Main message area, scrollable */
+.messages-body {
+  padding: 16px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(#fbfbfc,#3f4cb2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow-y: scroll;
+}
+
+/* Common chat bubble styling */
+/* .message-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  word-break: break-word;
+  font-size: 0.95rem;
+  margin: 4px 0;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.sender {
+  background-color: #00170d;
+  color: rgb(16, 23, 110);
+
+  align-self: flex-end;
+  text-align: right;
+}
+
+
+.received {
+  background-color: #cde681;
+  color: rgb(38, 30, 110);
+  align-self: flex-end;
+  text-align: right;
+} */
+
+.message-bubble {
+  max-width: 70%;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-size: 0.95rem;
+  display: flex;
+  word-wrap: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Sender message (Right-aligned) */
+.sent {
+  background-color: #3797f0; /* Instagram blue */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Receiver message (Left-aligned) */
+.received {
+  background-color: #efefef;
+  color: black;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Optional: Add small tail for bubble effect */
+.sent::after,
+.received::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.sent::after {
+  right: -10px;
+  border-left-color: #3797f0;
+  border-right: 0;
+  border-bottom: 0;
+  top: 0.7rem;
+}
+
+.received::after {
+  left: -10px;
+  border-right-color: #efefef;
+  border-left: 0;
+  border-bottom: 0;
+  top: 0.7rem;
+}
+
+.viewProfileButton{
+  /* width: 10%; */
+  padding: 0.3rem;
+  /* margin-top: 1rem; */
+  background: #040b3b;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.back-btn{
+  width: 5%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: #040b3b;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}

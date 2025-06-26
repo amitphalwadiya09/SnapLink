@@ -1,0 +1,21 @@
+/* src/css/feed.css */
+.feed-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* Optional: hide scrollbar in modern browsers */
+.feed-container::-webkit-scrollbar {
+  display: none;
+}
+.feed-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
